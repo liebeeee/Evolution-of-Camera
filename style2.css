@@ -1,0 +1,162 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 70px;
+}
+.navbar
+{
+    background: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.container
+{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.arr
+{
+    position: relative;
+    height: 50px;
+    width: 45px;
+    border-radius: 20%;
+    margin: 5px;
+    transition: 0.5s ease;
+    cursor:pointer;
+}
+.arr:hover
+{
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.342);
+}
+.arr div
+{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 5px solid #202020;
+    border-left: 5px solid #202020;
+    transform: rotate(45deg);
+    left: 10px;
+    top: 17px;
+}
+.back
+{
+    transform: rotate(-90deg);
+}
+.navbar ul
+{
+    text-align: center;
+    justify-content: center;
+}
+h1
+{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+#sec1 h1
+{
+    color: #000;
+}
+.container2
+{
+    position: relative;
+    min-height: 100vh;
+    background-color: #F17000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23600000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23710018' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%237f002e' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%238a0048' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238e0067' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container2 h1
+{
+    font-size: 40px;
+    padding: 15px;
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+}
+.container2 .image-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    padding: 10px;
+}
+.image-container > .image
+{
+    height: 400px;
+    width: 500px;
+    border: 10px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.container2 .image-container .image img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.container2 .image-container .image:hover img
+{
+    transform: scale(1.1);
+}
+.container2 .popup-image
+{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.container2 .popup-image span
+{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.container2 .popup-image img
+{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+@media (max-width:770px)
+{
+    .container2 .popup-image img
+    {
+        width: 95%;
+    }
+}

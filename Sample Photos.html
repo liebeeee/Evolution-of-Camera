@@ -1,0 +1,106 @@
+<!DOCType html>
+<html>
+    <head>
+        <link rel="Home" href="Final Project Progress.html">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <div id="navbar" class="navbar">
+                <a href="Final Project Progress.html" target="_self"><div class="container">
+                    <div class="arr back"><div></div></div></a>
+                </div>
+                <nav>
+                    <ul>
+                            <h3> Sample Photos of Each Camera</h3>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="sec1">
+            <div class="container2">
+                <h1>Pinhole Cam</h1>
+                <div class="image-container">
+                <div class="image"><img src="pinhole1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <h1>Daguerreotype Cam</h1>
+                <div class="image-container">
+                <div class="image"><img src="Daguerreotype1.jpg" alt=""></div>
+                <div class="image"><img src="Daguerreotype2.jpg" alt=""></div>
+                <div class="image"><img src="Daguerreotype3.jpg" alt=""></div>
+                </div>
+                <h1>Reise Cam</h1>
+                <div class="image-container">
+                <div class="image"><img src="Reise1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <h1>Leica I Cam</h1>
+                <div class="image-container">
+                <div class="image"><img src="pinhole1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <h1>Polaroid Model 95</h1>
+                <div class="image-container">
+                <div class="image"><img src="pinhole1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <h1>Kodak Digital Cam</h1>
+                <div class="image-container">
+                <div class="image"><img src="pinhole1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <h1>Fuji QuickSnap</h1>
+                <div class="image-container">
+                <div class="image"><img src="pinhole1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <h1>Sharp J-SH04</h1>
+                <div class="image-container">
+                <div class="image"><img src="pinhole1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <h1>Phone Cam</h1>
+                <div class="image-container">
+                <div class="image"><img src="pinhole1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <h1>GoPro HD HERO</h1>
+                <div class="image-container">
+                <div class="image"><img src="pinhole1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <h1>Latest DSLR Cam</h1>
+                <div class="image-container">
+                <div class="image"><img src="pinhole1.jpg" alt=""></div>
+                <div class="image"><img src="pinhole2.jpg" alt=""></div>
+                <div class="image"><img src="pinhole3.jpg" alt=""></div>
+                </div>
+                <div class="popup-image">
+                    <span>&times;</span>
+                    <img src="pinhole1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image =>{
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+            });
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
