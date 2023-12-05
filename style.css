@@ -314,15 +314,14 @@ button::after{
 .container .box-container .box2 .image
 {
     overflow: hidden;
-    height: 700px;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Sampleshots.jpg");
     text-align: center;
 }
 .container .box-container .box .image img
 {
-    height: 100%;
-    width: 100%;
     object-fit: fill;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
