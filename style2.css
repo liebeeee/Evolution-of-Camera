@@ -8,6 +8,8 @@ body
 {
     margin: 0;
     padding: 0;
+    background-image: url("bimage.jpg");
+    background-size: 1vh;
 }
 header
 {
@@ -17,7 +19,7 @@ header
     height: 70px;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .3);
     transition: background-color 0.4s ease-in-out;
-    background-color: #f2ddb8;
+    background-color: #e3e3e3;
     font-family: 'Lemon', serif;
 }
 header nav ul h3
