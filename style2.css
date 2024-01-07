@@ -18,6 +18,7 @@ header
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .3);
     transition: background-color 0.4s ease-in-out;
     background-color: #f2ddb8;
+    font-family: 'Lemon', serif;
 }
 header nav ul h3
 {
@@ -78,6 +79,7 @@ h1
 #sec1 h1
 {
     color: #000;
+    font-family: 'Lora', serif;
 }
 .container2
 {
