@@ -8,9 +8,6 @@ body
 {
     margin: 0;
     padding: 0;
-    background-image: url("bimage.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 header
 {
@@ -20,29 +17,14 @@ header
     height: 70px;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .3);
     transition: background-color 0.4s ease-in-out;
+    background-color: #f2ddb8;
 }
 header nav ul h3
 {
-    color: #fff;
+    color: #000;
     transition: color 0.4s ease-in-out;
 }
-header.scrolled .navbar
-{
-    background-color: #ffff;
-}
-header.scrolled nav ul h3
-{
-    color: #000;
-    transition: background-color 0.4s ease-in-out;
-}
-header.scroll .navbar ul h3
-{
-    color: #000;
-}
-header.scrolled nav ul h3::after
-{
-    background-color: #000;
-}
+
 .navbar
 {
     height: 100%;
@@ -95,7 +77,7 @@ h1
 }
 #sec1 h1
 {
-    color: #fff;
+    color: #000;
 }
 .container2
 {
