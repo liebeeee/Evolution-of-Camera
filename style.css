@@ -284,23 +284,27 @@ button::after{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 .container .box-container .box .content .btn
 {
     text-decoration: none;
-    color: aqua;
-    width: 10%;
-    color: #000;
+    color: #fff;
     font-size: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background: #fff;
-    border: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
     text-align: center;
+    transition: 0.4s ease-in-out;
+    font-family: 'Salsa', cursive;
+    text-transform: uppercase;
+}
+.btn:hover
+{
+    background-color: rgb(88, 87, 87);
 }
 .container .box-container .box .content .icons
 {
