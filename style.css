@@ -288,7 +288,7 @@ button::after{
 .container .box-container .box .content .btn
 {
     text-decoration: none;
-    color: #fff;
+    color: rgb(219, 201, 174);
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
